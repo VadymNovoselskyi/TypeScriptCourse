@@ -16,7 +16,7 @@ const thomas: Person = {
 	first: 'Thomas',
 	last: 'Hardy',
     height: 180,
-	greet: name => `Hi ${name}, my name is ${this.first}`,
+	greet: function(name: string): string { return `Hi ${name}, my name is ${this.first}`},
 };
 
 interface Person {

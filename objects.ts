@@ -5,14 +5,14 @@ function printName(person: { name: string; last: string }): void {
 const me: { name: string; last: string } = { name: 'Vadym', last: 'Novoselskyi' };
 printName(me);
 
-type Point = {
+type Point3D = {
 	x: number;
 	y: number;
 	z?: number;
 };
 
-let coordinate2D: Point = { x: 100, y: 100 };
-let coordinate3D: Point = { x: 100, y: 100, z: -1 };
+let coordinate2D: Point3D = { x: 100, y: 100 };
+let coordinate3D: Point3D = { x: 100, y: 100, z: -1 };
 
 function randomCoords(): Point {
 	return { x: Math.random() * 1000, y: Math.random() * 1000 };

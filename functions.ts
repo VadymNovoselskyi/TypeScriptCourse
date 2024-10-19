@@ -2,7 +2,7 @@ function square(n: number): number {
 	return n * n;
 }
 
-function greet(name: string = 'stranger'): string {
+function greetPerson(name: string = 'stranger'): string {
 	return `Hello, ${name}`;
 }
 
@@ -23,8 +23,8 @@ function isTrue(bool: boolean): string | boolean {
 }
 
 //already knows that color is a string
-const colors = ['orange', 'red', 'yellow'];
-colors.forEach(color => console.log(color.toUpperCase()));
+const someColors = ['orange', 'red', 'yellow'];
+someColors.forEach(color => console.log(color.toUpperCase()));
 
 //:never
 const makeError = (message: string): never => {
